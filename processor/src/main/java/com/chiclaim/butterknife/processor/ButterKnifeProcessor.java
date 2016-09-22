@@ -64,6 +64,11 @@ public class ButterKnifeProcessor extends AbstractProcessor {
     private void printRoundEnvironment(RoundEnvironment roundEnv) {
         Set<? extends Element> as = roundEnv.getElementsAnnotatedWith(BindView.class);
         for (Element element : as) {
+
+            TypeElement enclosingElement = (TypeElement) element.getEnclosingElement();
+            printValue("========annotation 所在的类包名 " + enclosingElement.getQualifiedName());
+            printValue("========annotation 所在类的类名 " + enclosingElement.getSimpleName());
+
             printValue("========element name "+element.getSimpleName());
             printValue("========annotation value " + element.getAnnotation(BindView.class).value());
         }
