@@ -3,6 +3,7 @@ apply plugin: 'java'
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':annotation')
+    compile 'com.squareup:javapoet:1.7.0'
 }
 
 sourceCompatibility = "1.7"

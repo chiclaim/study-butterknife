@@ -1,4 +1,4 @@
-package com.chiclaim.butterknife.annotation;
+package com.chiclaim.processor.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

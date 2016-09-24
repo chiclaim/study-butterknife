@@ -1,4 +1,4 @@
-package com.chiclaim.butterknife;
+package com.chiclaim.processor;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.chiclaim.butterknife", appContext.getPackageName());
+        assertEquals("com.chiclaim.butterknife.test", appContext.getPackageName());
     }
 }

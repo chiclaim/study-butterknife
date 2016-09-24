@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 public class MyButterKnife {
 
 
-    public void bind(Activity activity) {
+    public static void bind(Activity activity) {
         //获取activity的decorView
         View view = activity.getWindow().getDecorView();
         String qualifiedName = activity.getClass().getName();

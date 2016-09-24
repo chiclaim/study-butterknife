@@ -1,11 +1,11 @@
-package com.chiclaim.butterknife;
+package com.chiclaim.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.chiclaim.butterknife.annotation.BindView;
+import com.chiclaim.processor.annotation.BindView;
 
 /**
  * Created by chiclaim on 2016/09/23

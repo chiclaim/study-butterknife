@@ -1,4 +1,4 @@
-package com.chiclaim.butterknife;
+package com.chiclaim.processor;
 
 import org.junit.Test;
 
