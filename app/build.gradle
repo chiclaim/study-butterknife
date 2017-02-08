@@ -37,9 +37,14 @@ dependencies {
     compile project(':processor')
     compile project(':butterknife')
 }
+//把processor module生成的jar拷贝到app libs目录
+//task processorTask(type: Exec) {
+//    commandLine 'cp', '../processor/build/libs/processor.jar', 'libs/'
+//}
 
-task processorTask(type: Exec) {
-    commandLine 'cp', '../processor/build/libs/processor.jar', 'libs/'
+task processorTask(type: Copy) {
+	from '../processor/build/libs/processor.jar' into 'libs/'
 }
+
 processorTask.dependsOn(':processor:build')
 preBuild.dependsOn(processorTask)
